@@ -5,21 +5,21 @@
 class Wyrm < Formula
   desc "Repeatable tmux session layouts from a TOML config"
   homepage "https://github.com/jskoll/wyrm"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jskoll/wyrm/releases/download/v0.1.3/wyrm_0.1.3_darwin_amd64.tar.gz"
-      sha256 "8bcc1b583e2650f116d7f2388565f6937dacfcdd3cbf2d64d4a5cf5d82e7dc7d"
+      url "https://github.com/jskoll/wyrm/releases/download/v0.1.4/wyrm_0.1.4_darwin_amd64.tar.gz"
+      sha256 "df904d9a2b0a589a39b067209210edc81758b218ec4b4a06f5bef0a13b2d83bc"
 
       define_method(:install) do
         bin.install "wyrm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jskoll/wyrm/releases/download/v0.1.3/wyrm_0.1.3_darwin_arm64.tar.gz"
-      sha256 "5eeff24948db4da3b51eef9587fad06b7b11d47cc360f59b748782279df6b4f3"
+      url "https://github.com/jskoll/wyrm/releases/download/v0.1.4/wyrm_0.1.4_darwin_arm64.tar.gz"
+      sha256 "bd623abb18465d38269bb7dec0b771a2c3e39976d972aeb5802789c8e1371503"
 
       define_method(:install) do
         bin.install "wyrm"
@@ -29,15 +29,15 @@ class Wyrm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jskoll/wyrm/releases/download/v0.1.3/wyrm_0.1.3_linux_amd64.tar.gz"
-      sha256 "b772563af9a99496a8dc67cc3dc31e3f0d1fdbc7032d1cd4738bc7916d692469"
+      url "https://github.com/jskoll/wyrm/releases/download/v0.1.4/wyrm_0.1.4_linux_amd64.tar.gz"
+      sha256 "3cafea5e992741a804586eda62400dbeafc52a02c438a5af2b4926313778edfd"
       define_method(:install) do
         bin.install "wyrm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jskoll/wyrm/releases/download/v0.1.3/wyrm_0.1.3_linux_arm64.tar.gz"
-      sha256 "08874f92399fcb29d3a5bf7cc2720b1037017c968133fa79938096c74e9f61c5"
+      url "https://github.com/jskoll/wyrm/releases/download/v0.1.4/wyrm_0.1.4_linux_arm64.tar.gz"
+      sha256 "7a578ad819c455787b0932d966c3131da9b2a13ff57dd312ae2525ad86413424"
       define_method(:install) do
         bin.install "wyrm"
       end

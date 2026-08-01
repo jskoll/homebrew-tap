@@ -5,13 +5,13 @@
 class Wyrm < Formula
   desc "Repeatable tmux session layouts from a TOML config"
   homepage "https://github.com/jskoll/wyrm"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jskoll/wyrm/releases/download/v0.6.0/wyrm_0.6.0_darwin_amd64.tar.gz"
-      sha256 "768cb953242422d938ac7876f7b6116ef985a511aaeedef8be48b10e0ddb98b3"
+      url "https://github.com/jskoll/wyrm/releases/download/v0.6.1/wyrm_0.6.1_darwin_amd64.tar.gz"
+      sha256 "e7bd3034211ada2e356c66e41f6f306bd4ecaa3d0a5f9215bafcba505c3b43d8"
 
       define_method(:install) do
         bin.install "wyrm"
@@ -21,8 +21,8 @@ class Wyrm < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jskoll/wyrm/releases/download/v0.6.0/wyrm_0.6.0_darwin_arm64.tar.gz"
-      sha256 "e579ac79a3cbbe37deb4f92059933c17863d4a6ea1b177928d3d9298c9301b9a"
+      url "https://github.com/jskoll/wyrm/releases/download/v0.6.1/wyrm_0.6.1_darwin_arm64.tar.gz"
+      sha256 "d05b8a91c2da729a5353cac358c6c177d8d8cf1888404047581abf6307a9d1b5"
 
       define_method(:install) do
         bin.install "wyrm"
@@ -35,8 +35,8 @@ class Wyrm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jskoll/wyrm/releases/download/v0.6.0/wyrm_0.6.0_linux_amd64.tar.gz"
-      sha256 "e217a2af3a8db1dc28beae92edd92a69d6d9ee59385e4782cc2271821d31b0eb"
+      url "https://github.com/jskoll/wyrm/releases/download/v0.6.1/wyrm_0.6.1_linux_amd64.tar.gz"
+      sha256 "d8fb8a78e60c47c0dfd0eb502d8513296ddcec0bdf9e43f7bde1f0d83d9c5dd1"
       define_method(:install) do
         bin.install "wyrm"
         bash_completion.install "completions/wyrm.bash" => "wyrm"
@@ -45,8 +45,8 @@ class Wyrm < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jskoll/wyrm/releases/download/v0.6.0/wyrm_0.6.0_linux_arm64.tar.gz"
-      sha256 "9c2f36eaca8db25602b71397ede9a6c4ef554b235233463bab9427ddbca77e46"
+      url "https://github.com/jskoll/wyrm/releases/download/v0.6.1/wyrm_0.6.1_linux_arm64.tar.gz"
+      sha256 "e673b3c2f031cf3a0bd708257b37740b04c15f4c18a7f3a012787af2a6b0a555"
       define_method(:install) do
         bin.install "wyrm"
         bash_completion.install "completions/wyrm.bash" => "wyrm"

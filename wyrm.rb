@@ -5,13 +5,13 @@
 class Wyrm < Formula
   desc "Repeatable tmux session layouts from a TOML config"
   homepage "https://github.com/jskoll/wyrm"
-  version "1.2.1"
+  version "1.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jskoll/wyrm/releases/download/v1.2.1/wyrm_1.2.1_darwin_amd64.tar.gz"
-      sha256 "b7b315cc0b8d0cc76271a8653110915d3cac881ae14ddb177fa8afe67749a80b"
+      url "https://github.com/dragonleech-code/wyrm/releases/download/v1.2.2/wyrm_1.2.2_darwin_amd64.tar.gz"
+      sha256 "d790b51065c22eada5b28e14cd85eca23ced03e360b9745e028992e885386c64"
 
       define_method(:install) do
         bin.install "wyrm"
@@ -22,8 +22,8 @@ class Wyrm < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jskoll/wyrm/releases/download/v1.2.1/wyrm_1.2.1_darwin_arm64.tar.gz"
-      sha256 "9e6c749bc1f383813f506a76ce5e6f41174f2e400bfed681996035abcfc91527"
+      url "https://github.com/dragonleech-code/wyrm/releases/download/v1.2.2/wyrm_1.2.2_darwin_arm64.tar.gz"
+      sha256 "6dde788551f1dc0b53c949a662c7febce0bca6bd3faa8fc122a0c05e7ed38047"
 
       define_method(:install) do
         bin.install "wyrm"
@@ -37,8 +37,8 @@ class Wyrm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jskoll/wyrm/releases/download/v1.2.1/wyrm_1.2.1_linux_amd64.tar.gz"
-      sha256 "41ee301f36cc17434283ae10a34098eab986c3192f9cbfa9da3d05083dcbdfad"
+      url "https://github.com/dragonleech-code/wyrm/releases/download/v1.2.2/wyrm_1.2.2_linux_amd64.tar.gz"
+      sha256 "ead940a478776ccf5242600a3b2575b269762b7f528bfdb9db1e55881a749f82"
       define_method(:install) do
         bin.install "wyrm"
         bash_completion.install "completions/wyrm.bash" => "wyrm"
@@ -48,8 +48,8 @@ class Wyrm < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jskoll/wyrm/releases/download/v1.2.1/wyrm_1.2.1_linux_arm64.tar.gz"
-      sha256 "15bcf42e47b6c02e178e3170e07a2766b69bb16a6ba4909c8043b758e61e2dc6"
+      url "https://github.com/dragonleech-code/wyrm/releases/download/v1.2.2/wyrm_1.2.2_linux_arm64.tar.gz"
+      sha256 "21aaf96cbdb42cd21ef5b5ffc4fb5df319fe95690768e9ff0d9e02f72f32a3ae"
       define_method(:install) do
         bin.install "wyrm"
         bash_completion.install "completions/wyrm.bash" => "wyrm"
